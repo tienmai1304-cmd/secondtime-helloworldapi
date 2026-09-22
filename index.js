@@ -4,6 +4,11 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+//chi can .com la ra
+app.get("/", (req, res) => {
+    res.send("Hello World!");
+});
+
 app.get("/api/hello", (req, res) => {
     res.json({
         message: "Hello World!"
